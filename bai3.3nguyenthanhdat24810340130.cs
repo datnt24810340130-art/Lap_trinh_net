@@ -37,17 +37,17 @@ class Program
 
     static void Main()
     {
-        Console.Write("Nhập số nguyên dương N: ");
+        Console.Write("Nhap so nguyen duong: ");
         int N = int.Parse(Console.ReadLine());
         if (IsPrime(N))
-            Console.WriteLine($"{N} là Số nguyên tố!");
+            Console.WriteLine($"{N} là so nguyen to");
         else
-            Console.WriteLine($"{N} KHÔNG là Số nguyên tố.");
+            Console.WriteLine($"{N} Khong la so nguyen to.");
         if (IsPerfectNumber(N))
-            Console.WriteLine($"{N} là Số hoàn hảo!");
+            Console.WriteLine($"{N} la so hoan hao");
         else
-            Console.WriteLine($"{N} KHÔNG là Số hoàn hảo.");
-        Console.Write($"Dãy Fibonacci {N} số: ");
+            Console.WriteLine($"{N} Khong la so hoan hao");
+        Console.Write($"Day Fibonacci {N} so: ");
 
         int f1 = 0;
         int f2 = 1;
