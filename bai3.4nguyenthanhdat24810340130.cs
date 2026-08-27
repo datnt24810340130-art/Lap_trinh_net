@@ -6,13 +6,13 @@ class Program
     {
         Console.Clear();
 
-        Console.Write("Nhập số thứ nhất a: ");
+        Console.Write("Nhap so thu nhat a: ");
         double a = double.Parse(Console.ReadLine());
 
-        Console.Write("Nhập số thứ hai b: ");
+        Console.Write("Nhập so thu hai b: ");
         double b = double.Parse(Console.ReadLine());
 
-        Console.Write("Nhập phép toán (+, -, *, /, %): ");
+        Console.Write("Nhap phep toan (+, -, *, /, %): ");
         char op = char.Parse(Console.ReadLine());
 
         try
@@ -25,21 +25,21 @@ class Program
                 '/' when b != 0 => a / b,
                 '%' when b != 0 => a % b,
                 '/' or '%' when b == 0 => throw new DivideByZeroException(),
-                _ => throw new InvalidOperationException("Phép toán không hợp lệ!")
+                _ => throw new InvalidOperationException("Phep toan khong hop le!")
             };
 
-            Console.WriteLine($"Kết quả: {result:F2}");
+            Console.WriteLine($"ket qua: {result:F2}");
         }
         catch (DivideByZeroException)
         {
-            Console.WriteLine("Lỗi: Không thể chia cho 0!");
+            Console.WriteLine("Loi: Khong the chia cho 0!");
         }
         catch (InvalidOperationException ex)
         {
-            Console.WriteLine($"Lỗi: {ex.Message}");
+            Console.WriteLine($"Loi: {ex.Message}");
         }
 
-        Console.WriteLine("\nNhấn phím bất kỳ để quay lại Menu...");
+        Console.WriteLine("\nNhan phim bat ky đe quay lai Menu...");
         Console.ReadKey();
     }
 
@@ -47,13 +47,13 @@ class Program
     {
         Console.Clear();
 
-        Console.Write("Nhập a: ");
+        Console.Write("Nhap a: ");
         double a = double.Parse(Console.ReadLine());
 
-        Console.Write("Nhập b: ");
+        Console.Write("Nhap b: ");
         double b = double.Parse(Console.ReadLine());
 
-        Console.Write("Nhập c: ");
+        Console.Write("Nhap c: ");
         double c = double.Parse(Console.ReadLine());
 
         if (a == 0)
@@ -61,14 +61,14 @@ class Program
             if (b == 0)
             {
                 if (c == 0)
-                    Console.WriteLine("Phương trình có vô số nghiệm.");
+                    Console.WriteLine("Phuong trinh co vo so nghiem.");
                 else
-                    Console.WriteLine("Phương trình vô nghiệm.");
+                    Console.WriteLine("Phuong trinh vo nghiem.");
             }
             else
             {
                 double x = -c / b;
-                Console.WriteLine($"Nghiệm x = {x:F2}");
+                Console.WriteLine($"Nghiem x = {x:F2}");
             }
         }
         else
@@ -86,15 +86,15 @@ class Program
             else if (delta == 0)
             {
                 double x = -b / (2 * a);
-                Console.WriteLine($"Nghiệm kép x = {x:F2}");
+                Console.WriteLine($"Nghiem kep x = {x:F2}");
             }
             else
             {
-                Console.WriteLine("Vô nghiệm.");
+                Console.WriteLine("Vo nghiem.");
             }
         }
 
-        Console.WriteLine("\nNhấn phím bất kỳ để quay lại Menu...");
+        Console.WriteLine("\nNhan phim bat ky de quay lai Menu...");
         Console.ReadKey();
     }
 
@@ -136,20 +136,20 @@ class Program
     {
         Console.Clear();
 
-        Console.Write("Nhập số nguyên dương N: ");
+        Console.Write("Nhap so nguyen duonh N: ");
         int N = int.Parse(Console.ReadLine());
 
         if (IsPrime(N))
-            Console.WriteLine($"{N} là Số nguyên tố!");
+            Console.WriteLine($"{N} la so nguyen to");
         else
-            Console.WriteLine($"{N} KHÔNG là Số nguyên tố.");
+            Console.WriteLine($"{N} Khong la so nguyen to");
 
         if (IsPerfectNumber(N))
-            Console.WriteLine($"{N} là Số hoàn hảo!");
+            Console.WriteLine($"{N} la so hoan hao");
         else
-            Console.WriteLine($"{N} KHÔNG là Số hoàn hảo.");
+            Console.WriteLine($"{N} Khong la so hoan hao");
 
-        Console.Write($"Dãy Fibonacci {N} số: ");
+        Console.Write($"Dãy Fibonacci {N} so: ");
 
         int f1 = 0;
         int f2 = 1;
@@ -168,7 +168,7 @@ class Program
 
         Console.WriteLine();
 
-        Console.WriteLine("\nNhấn phím bất kỳ để quay lại Menu...");
+        Console.WriteLine("\nNhan phim bat ki de quay lai menu");
         Console.ReadKey();
     }
 
@@ -181,13 +181,13 @@ class Program
             Console.Clear();
 
             Console.WriteLine("========== MENU CHÍNH ==========");
-            Console.WriteLine("1. Chạy Bài tập 1 (Calculator)");
-            Console.WriteLine("2. Chạy Bài tập 2 (Phương trình bậc 2)");
-            Console.WriteLine("3. Chạy Bài tập 3 (Số nguyên tố & Fibonacci)");
-            Console.WriteLine("0. Thoát chương trình");
-            Console.WriteLine("================================");
+            Console.WriteLine("1. Chay bai 1 (Calculator)");
+            Console.WriteLine("2. Chạy Bai 2 (Phương trình bậc 2)");
+            Console.WriteLine("3. Chạy Bai  3 (Số nguyên tố & Fibonacci)");
+            Console.WriteLine("0. Thoat ct");
+            
 
-            Console.Write("Nhập lựa chọn: ");
+            Console.Write("Nhap lua chon: ");
             choice = int.Parse(Console.ReadLine());
 
             switch (choice)
@@ -206,12 +206,12 @@ class Program
 
                 case 0:
                     Console.Clear();
-                    Console.WriteLine("Đã thoát chương trình!");
+                    Console.WriteLine("Da thoat ct");
                     break;
 
                 default:
-                    Console.WriteLine("Lựa chọn không hợp lệ!");
-                    Console.WriteLine("Nhấn phím bất kỳ để tiếp tục...");
+                    Console.WriteLine("Lua chon ko hop le");
+                    Console.WriteLine("Nhan phim bat ki de tiep tuc");
                     Console.ReadKey();
                     break;
             }
