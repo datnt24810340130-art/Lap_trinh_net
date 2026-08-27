@@ -6,27 +6,27 @@ class Program
     {
         double a, b, c;
 
-        Console.Write("Nhập a: ");
+        Console.Write("Nhap a: ");
         a = double.Parse(Console.ReadLine());
 
-        Console.Write("Nhập b: ");
+        Console.Write("Nhap b: ");
         b = double.Parse(Console.ReadLine());
 
-        Console.Write("Nhập c: ");
+        Console.Write("Nhap c: ");
         c = double.Parse(Console.ReadLine());
         if (a == 0)
         {
             if (b == 0)
             {
                 if (c == 0)
-                    Console.WriteLine("Phương trình có vô số nghiệm.");
+                    Console.WriteLine("Phuong trinh vo so nghiem.");
                 else
-                    Console.WriteLine("Phương trình vô nghiệm.");
+                    Console.WriteLine("Phuong trinh vo nghiem.");
             }
             else
             {
                 double x = -c / b;
-                Console.WriteLine($"Nghiệm x = {x:F2}");
+                Console.WriteLine($"Nghiem x = {x:F2}");
             }
         }
         else
@@ -44,11 +44,11 @@ class Program
             else if (delta == 0)
             {
                 double x = -b / (2 * a);
-                Console.WriteLine($"Nghiệm kép x = {x:F2}");
+                Console.WriteLine($"Nghiem kep x = {x:F2}");
             }
             else
             {
-                Console.WriteLine("Vô nghiệm.");
+                Console.WriteLine("Vo nghiem.");
             }
         }
     }
