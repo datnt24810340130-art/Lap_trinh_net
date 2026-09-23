@@ -1,5 +1,9 @@
-![bai4.1](bai4.1.png)
-![bai4.2](bai4.2.png)
-![bai4.3](bai4.3.png)
-![bai4.4](bai4.4.png)
-![bai4.5](bai4.5.png)
+![bai4.1](./bai4.1.png)
+
+![bai4.2](./bai4.2.png)
+
+![bai4.3](./bai4.3.png)
+
+![bai4.4](./bai4.4.png)
+
+![bai4.5](./bai4.5.png)
