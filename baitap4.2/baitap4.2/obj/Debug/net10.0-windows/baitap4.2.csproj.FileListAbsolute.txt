@@ -1,0 +1,17 @@
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\bin\Debug\net10.0-windows\baitap4.2.exe
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\bin\Debug\net10.0-windows\baitap4.2.deps.json
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\bin\Debug\net10.0-windows\baitap4.2.runtimeconfig.json
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\bin\Debug\net10.0-windows\baitap4.2.dll
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\bin\Debug\net10.0-windows\baitap4.2.pdb
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\obj\Debug\net10.0-windows\baitap4._2.Form1.resources
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\obj\Debug\net10.0-windows\baitap4.2.csproj.GenerateResource.cache
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\obj\Debug\net10.0-windows\baitap4.2.GeneratedMSBuildEditorConfig.editorconfig
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\obj\Debug\net10.0-windows\baitap4.2.AssemblyInfoInputs.cache
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\obj\Debug\net10.0-windows\baitap4.2.AssemblyInfo.cs
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\obj\Debug\net10.0-windows\baitap4.2.csproj.CoreCompileInputs.cache
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\obj\Debug\net10.0-windows\baitap4.2.sourcelink.json
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\obj\Debug\net10.0-windows\baitap4.2.dll
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\obj\Debug\net10.0-windows\refint\baitap4.2.dll
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\obj\Debug\net10.0-windows\baitap4.2.pdb
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\obj\Debug\net10.0-windows\baitap4.2.genruntimeconfig.cache
+D:\EPU\laptrinhnet\baitap4.2\baitap4.2\obj\Debug\net10.0-windows\ref\baitap4.2.dll
