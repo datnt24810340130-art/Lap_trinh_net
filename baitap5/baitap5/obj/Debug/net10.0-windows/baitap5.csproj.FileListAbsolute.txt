@@ -1,0 +1,17 @@
+D:\EPU\laptrinhnet\baitap5\baitap5\bin\Debug\net10.0-windows\baitap5.exe
+D:\EPU\laptrinhnet\baitap5\baitap5\bin\Debug\net10.0-windows\baitap5.deps.json
+D:\EPU\laptrinhnet\baitap5\baitap5\bin\Debug\net10.0-windows\baitap5.runtimeconfig.json
+D:\EPU\laptrinhnet\baitap5\baitap5\bin\Debug\net10.0-windows\baitap5.dll
+D:\EPU\laptrinhnet\baitap5\baitap5\bin\Debug\net10.0-windows\baitap5.pdb
+D:\EPU\laptrinhnet\baitap5\baitap5\obj\Debug\net10.0-windows\baitap5.Form1.resources
+D:\EPU\laptrinhnet\baitap5\baitap5\obj\Debug\net10.0-windows\baitap5.csproj.GenerateResource.cache
+D:\EPU\laptrinhnet\baitap5\baitap5\obj\Debug\net10.0-windows\baitap5.GeneratedMSBuildEditorConfig.editorconfig
+D:\EPU\laptrinhnet\baitap5\baitap5\obj\Debug\net10.0-windows\baitap5.AssemblyInfoInputs.cache
+D:\EPU\laptrinhnet\baitap5\baitap5\obj\Debug\net10.0-windows\baitap5.AssemblyInfo.cs
+D:\EPU\laptrinhnet\baitap5\baitap5\obj\Debug\net10.0-windows\baitap5.csproj.CoreCompileInputs.cache
+D:\EPU\laptrinhnet\baitap5\baitap5\obj\Debug\net10.0-windows\baitap5.sourcelink.json
+D:\EPU\laptrinhnet\baitap5\baitap5\obj\Debug\net10.0-windows\baitap5.dll
+D:\EPU\laptrinhnet\baitap5\baitap5\obj\Debug\net10.0-windows\refint\baitap5.dll
+D:\EPU\laptrinhnet\baitap5\baitap5\obj\Debug\net10.0-windows\baitap5.pdb
+D:\EPU\laptrinhnet\baitap5\baitap5\obj\Debug\net10.0-windows\baitap5.genruntimeconfig.cache
+D:\EPU\laptrinhnet\baitap5\baitap5\obj\Debug\net10.0-windows\ref\baitap5.dll
