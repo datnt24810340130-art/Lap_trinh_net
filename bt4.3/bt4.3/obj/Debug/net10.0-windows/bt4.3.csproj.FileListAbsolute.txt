@@ -1,0 +1,17 @@
+D:\EPU\laptrinhnet\bt4.3\bt4.3\bin\Debug\net10.0-windows\bt4.3.exe
+D:\EPU\laptrinhnet\bt4.3\bt4.3\bin\Debug\net10.0-windows\bt4.3.deps.json
+D:\EPU\laptrinhnet\bt4.3\bt4.3\bin\Debug\net10.0-windows\bt4.3.runtimeconfig.json
+D:\EPU\laptrinhnet\bt4.3\bt4.3\bin\Debug\net10.0-windows\bt4.3.dll
+D:\EPU\laptrinhnet\bt4.3\bt4.3\bin\Debug\net10.0-windows\bt4.3.pdb
+D:\EPU\laptrinhnet\bt4.3\bt4.3\obj\Debug\net10.0-windows\bt4._3.Form1.resources
+D:\EPU\laptrinhnet\bt4.3\bt4.3\obj\Debug\net10.0-windows\bt4.3.csproj.GenerateResource.cache
+D:\EPU\laptrinhnet\bt4.3\bt4.3\obj\Debug\net10.0-windows\bt4.3.GeneratedMSBuildEditorConfig.editorconfig
+D:\EPU\laptrinhnet\bt4.3\bt4.3\obj\Debug\net10.0-windows\bt4.3.AssemblyInfoInputs.cache
+D:\EPU\laptrinhnet\bt4.3\bt4.3\obj\Debug\net10.0-windows\bt4.3.AssemblyInfo.cs
+D:\EPU\laptrinhnet\bt4.3\bt4.3\obj\Debug\net10.0-windows\bt4.3.csproj.CoreCompileInputs.cache
+D:\EPU\laptrinhnet\bt4.3\bt4.3\obj\Debug\net10.0-windows\bt4.3.sourcelink.json
+D:\EPU\laptrinhnet\bt4.3\bt4.3\obj\Debug\net10.0-windows\bt4.3.dll
+D:\EPU\laptrinhnet\bt4.3\bt4.3\obj\Debug\net10.0-windows\refint\bt4.3.dll
+D:\EPU\laptrinhnet\bt4.3\bt4.3\obj\Debug\net10.0-windows\bt4.3.pdb
+D:\EPU\laptrinhnet\bt4.3\bt4.3\obj\Debug\net10.0-windows\bt4.3.genruntimeconfig.cache
+D:\EPU\laptrinhnet\bt4.3\bt4.3\obj\Debug\net10.0-windows\ref\bt4.3.dll
