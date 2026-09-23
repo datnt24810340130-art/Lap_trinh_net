@@ -1,24 +1,5 @@
-# Kết quả thực hành Bài 4
-
-## Bài 4.1
-![Bài 4.1](anh/bai4.1.png)
-
----
-
-## Bài 4.2
-![Bài 4.2](anh/bai4.2.png)
-
----
-
-## Bài 4.3
-![Bài 4.3](anh/bai4.3.png)
-
----
-
-## Bài 4.4
-![Bài 4.4](anh/bai4.4.png)
-
----
-
-## Bài 4.5
-![Bài 4.5](anh/bai4.5.png)
+![bai4.1](bai4.1.png)
+![bai4.2](bai4.2.png)
+![bai4.3](bai4.3.png)
+![bai4.4](bai4.4.png)
+![bai4.5](bai4.5.png)
