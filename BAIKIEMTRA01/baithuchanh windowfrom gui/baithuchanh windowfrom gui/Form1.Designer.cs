@@ -143,7 +143,7 @@
             picAvatar.BorderStyle = BorderStyle.FixedSingle;
             picAvatar.Location = new Point(12, 199);
             picAvatar.Name = "picAvatar";
-            picAvatar.Size = new Size(164, 140);
+            picAvatar.Size = new Size(160, 157);
             picAvatar.SizeMode = PictureBoxSizeMode.Zoom;
             picAvatar.TabIndex = 1;
             picAvatar.TabStop = false;
@@ -231,7 +231,7 @@
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(9, 357);
+            btnAdd.Location = new Point(200, 238);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(89, 30);
             btnAdd.TabIndex = 12;
@@ -240,7 +240,7 @@
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(221, 357);
+            btnUpdate.Location = new Point(200, 326);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(89, 30);
             btnUpdate.TabIndex = 13;
@@ -249,7 +249,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(110, 357);
+            btnDelete.Location = new Point(200, 279);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(89, 30);
             btnDelete.TabIndex = 14;
