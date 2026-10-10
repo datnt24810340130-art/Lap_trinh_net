@@ -1,0 +1,84 @@
+
+# ========================================
+# VISUAL STUDIO
+# ========================================
+.vs/
+**/.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# ========================================
+# BUILD OUTPUT - C#
+# ========================================
+[Bb]in/
+[Oo]bj/
+**/bin/
+**/obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rtifacts/
+
+# ========================================
+# TEMPORARY FILES
+# ========================================
+*.tmp
+*.temp
+*.log
+*.cache
+*.bak
+*.old
+~$*
+
+# ========================================
+# VISUAL STUDIO TEST
+# ========================================
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# ========================================
+# RESHARPER
+# ========================================
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# ========================================
+# NUGET
+# ========================================
+*.nupkg
+*.snupkg
+
+# ========================================
+# OPERATING SYSTEM
+# ========================================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# ========================================
+# VS CODE - PERSONAL SETTINGS
+# ========================================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+
+# ========================================
+# USER-SPECIFIC DATABASE / LOCAL FILES
+# ========================================
+*.mdf
+*.ldf
+
+# ========================================
+# PUBLISH OUTPUT
+# ========================================
+publish/
+**/publish/
