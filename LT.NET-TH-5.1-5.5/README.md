@@ -20,6 +20,7 @@
 ### 3. Ảnh màn hình Kiểm tra lỗi (Validation)
 ![Kiểm tra lỗi](./screenshots/validation_error_5.1.png)
 
+
 ###  BÀI 5.2
 ### 1. Ảnh màn hình Giao diện chính
 ![Giao diện chính](./screenshots/main_ui_5.2.png)
@@ -30,6 +31,7 @@
 ### BÀI 5.3
 ### 1. Ảnh màn hình Giao diện chính
 ![Giao diện chính](./screenshots/main_ui_5.3.png)
+
 
 ### 2. Ảnh màn hình Chức năng thực thi / Kết quả
 ![Thực thi chức năng](./screenshots/execution_result_5.3.png)
