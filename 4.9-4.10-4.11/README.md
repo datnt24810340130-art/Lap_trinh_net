@@ -16,8 +16,7 @@
 
 ### 2. Ảnh màn hình Chức năng thực thi / Kết quả
 ![Thực thi chức năng](./screenshots/execution_result_4.9_1.png)
-![Thực thi chức năng](./screenshots/execution_result_4.9_2.
-png)
+![Thực thi chức năng](./screenshots/execution_result_4.9_2.png)
 ![Thực thi chức năng](./screenshots/execution_result_4.9_3.png)
 ![Thực thi chức năng](./screenshots/execution_result_4.9_4.png)
 
