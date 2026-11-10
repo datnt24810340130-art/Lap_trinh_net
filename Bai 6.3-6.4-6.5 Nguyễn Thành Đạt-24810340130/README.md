@@ -46,3 +46,26 @@ Transaction Rollback):
 ![Minh họa Xử lý lỗi](images/01_error_handling_6.4.png)
 
 ![Minh họa Xử lý lỗi](images/02_error_handling_6.4.png)
+
+### bài 6.5
+1. Màn hình Chính / Tổng quan hệ thống:
+![Màn hình chính](images/01_main_screen_6.5.png)
+![Màn hình chính](images/02_main_screen_6.5.png)
+2. Màn hình Quản lý Danh mục (CRUD - Thêm/Sửa/Xóa):
+![Màn hìnhCRUD](images/01_crud_screen_6.5.png)
+
+
+3. Màn hình Thực thi Nghiệp vụ chính (Lập Hóa đơn / Bán hàng /
+Chấm công / Đặt phòng):
+
+![Màn hình Nghiệp vụ](images/01_transaction_screen_6.5.png)
+![Màn hình Nghiệp vụ](images/02_transaction_screen_6.5.png)
+4. Màn hình Báo cáo - Thống kê:
+![Màn hình Thống kê](images/01_report_screen_6.5.png)
+![Màn hình Thống kê](images/02_report_screen_6.5.png)
+![Màn hình Thống kê](images/03_report_screen_6.5.png)
+
+5. Minh họa An toàn Dữ liệu (Phòng chống SQL Injection / Báo lỗi
+Transaction Rollback):
+![Minh họa Xử lý lỗi](images/01_error_handling_6.5.png)
+
