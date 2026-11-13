@@ -19,6 +19,22 @@ public partial class FormKhamBenh : Form
     {
         InitializeComponent();
         btnTimKiem.Click += BtnTimKiem_Click;
+        btnQuanLyBenhNhan.Click += (_, _) =>
+        {
+            using var form = new FormQuanLyBenhNhan();
+            form.ShowDialog(this);
+        };
+        btnQuanLyThuoc.Click += (_, _) =>
+        {
+            using var form = new FormQuanLyThuoc();
+            form.ShowDialog(this);
+            RefreshMedicineList();
+        };
+        btnLichSuKham.Click += (_, _) =>
+        {
+            using var form = new FormLichSuKham();
+            form.ShowDialog(this);
+        };
         btnTaoHoSo.Click += BtnTaoHoSo_Click;
         btnThemThuoc.Click += BtnThemThuoc_Click;
         btnXoaThuoc.Click += BtnXoaThuoc_Click;
@@ -30,6 +46,11 @@ public partial class FormKhamBenh : Form
     }
 
     private void FormKhamBenh_Load(object? sender, EventArgs e)
+    {
+        RefreshMedicineList();
+    }
+
+    private void RefreshMedicineList()
     {
         try
         {

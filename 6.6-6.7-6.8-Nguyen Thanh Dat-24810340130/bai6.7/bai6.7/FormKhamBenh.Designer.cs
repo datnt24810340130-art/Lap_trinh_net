@@ -6,6 +6,9 @@ namespace bai6._7
         private Panel pnlHeader = null!;
         private Label lblTitle = null!;
         private Label lblSubtitle = null!;
+        private Button btnQuanLyBenhNhan = null!;
+        private Button btnQuanLyThuoc = null!;
+        private Button btnLichSuKham = null!;
         private GroupBox grpTiepNhan = null!;
         private Label lblSoDienThoai = null!;
         private TextBox txtSoDienThoai = null!;
@@ -51,6 +54,9 @@ namespace bai6._7
             pnlHeader = new Panel();
             lblTitle = new Label();
             lblSubtitle = new Label();
+            btnQuanLyBenhNhan = new Button();
+            btnQuanLyThuoc = new Button();
+            btnLichSuKham = new Button();
             grpTiepNhan = new GroupBox();
             lblSoDienThoai = new Label();
             txtSoDienThoai = new TextBox();
@@ -93,19 +99,25 @@ namespace bai6._7
             pnlHeader.BackColor = Color.FromArgb(21, 101, 92);
             pnlHeader.Controls.Add(lblTitle);
             pnlHeader.Controls.Add(lblSubtitle);
+            pnlHeader.Controls.Add(btnQuanLyBenhNhan);
+            pnlHeader.Controls.Add(btnQuanLyThuoc);
+            pnlHeader.Controls.Add(btnLichSuKham);
             pnlHeader.Dock = DockStyle.Top;
             pnlHeader.Location = new Point(0, 0);
+            pnlHeader.Margin = new Padding(3, 4, 3, 4);
             pnlHeader.Name = "pnlHeader";
-            pnlHeader.Size = new Size(1100, 82);
+            pnlHeader.Size = new Size(1257, 109);
+            pnlHeader.TabIndex = 5;
             // 
             // lblTitle
             // 
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             lblTitle.ForeColor = Color.White;
-            lblTitle.Location = new Point(24, 10);
+            lblTitle.Location = new Point(27, 13);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(340, 32);
+            lblTitle.Size = new Size(338, 41);
+            lblTitle.TabIndex = 0;
             lblTitle.Text = "QUẢN LÝ KHÁM BỆNH";
             // 
             // lblSubtitle
@@ -113,10 +125,50 @@ namespace bai6._7
             lblSubtitle.AutoSize = true;
             lblSubtitle.Font = new Font("Segoe UI", 9F);
             lblSubtitle.ForeColor = Color.FromArgb(220, 245, 240);
-            lblSubtitle.Location = new Point(27, 49);
+            lblSubtitle.Location = new Point(31, 65);
             lblSubtitle.Name = "lblSubtitle";
-            lblSubtitle.Size = new Size(335, 15);
+            lblSubtitle.Size = new Size(349, 20);
+            lblSubtitle.TabIndex = 1;
             lblSubtitle.Text = "Tiếp nhận bệnh nhân  |  Kê đơn thuốc  |  Thanh toán";
+            // 
+            // btnQuanLyBenhNhan
+            // 
+            btnQuanLyBenhNhan.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnQuanLyBenhNhan.BackColor = Color.White;
+            btnQuanLyBenhNhan.FlatStyle = FlatStyle.Flat;
+            btnQuanLyBenhNhan.ForeColor = Color.FromArgb(21, 101, 92);
+            btnQuanLyBenhNhan.Location = new Point(1045, 34);
+            btnQuanLyBenhNhan.Name = "btnQuanLyBenhNhan";
+            btnQuanLyBenhNhan.Size = new Size(190, 40);
+            btnQuanLyBenhNhan.TabIndex = 2;
+            btnQuanLyBenhNhan.Text = "Quản lý bệnh nhân";
+            btnQuanLyBenhNhan.UseVisualStyleBackColor = false;
+            // 
+            // btnQuanLyThuoc
+            // 
+            btnQuanLyThuoc.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnQuanLyThuoc.BackColor = Color.White;
+            btnQuanLyThuoc.FlatStyle = FlatStyle.Flat;
+            btnQuanLyThuoc.ForeColor = Color.FromArgb(21, 101, 92);
+            btnQuanLyThuoc.Location = new Point(850, 34);
+            btnQuanLyThuoc.Name = "btnQuanLyThuoc";
+            btnQuanLyThuoc.Size = new Size(180, 40);
+            btnQuanLyThuoc.TabIndex = 3;
+            btnQuanLyThuoc.Text = "Quản lý thuốc";
+            btnQuanLyThuoc.UseVisualStyleBackColor = false;
+            // 
+            // btnLichSuKham
+            // 
+            btnLichSuKham.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnLichSuKham.BackColor = Color.White;
+            btnLichSuKham.FlatStyle = FlatStyle.Flat;
+            btnLichSuKham.ForeColor = Color.FromArgb(21, 101, 92);
+            btnLichSuKham.Location = new Point(660, 34);
+            btnLichSuKham.Name = "btnLichSuKham";
+            btnLichSuKham.Size = new Size(175, 40);
+            btnLichSuKham.TabIndex = 4;
+            btnLichSuKham.Text = "Lịch sử khám";
+            btnLichSuKham.UseVisualStyleBackColor = false;
             // 
             // grpTiepNhan
             // 
@@ -132,88 +184,104 @@ namespace bai6._7
             grpTiepNhan.Controls.Add(nudTienKham);
             grpTiepNhan.Controls.Add(btnTaoHoSo);
             grpTiepNhan.Controls.Add(lblMaHoSo);
-            grpTiepNhan.Location = new Point(20, 98);
+            grpTiepNhan.Location = new Point(23, 131);
+            grpTiepNhan.Margin = new Padding(3, 4, 3, 4);
             grpTiepNhan.Name = "grpTiepNhan";
-            grpTiepNhan.Size = new Size(1060, 184);
+            grpTiepNhan.Padding = new Padding(3, 4, 3, 4);
+            grpTiepNhan.Size = new Size(1211, 245);
+            grpTiepNhan.TabIndex = 4;
             grpTiepNhan.TabStop = false;
             grpTiepNhan.Text = "1. Tiếp nhận và thông tin khám";
             // 
             // lblSoDienThoai
             // 
             lblSoDienThoai.AutoSize = true;
-            lblSoDienThoai.Location = new Point(20, 34);
+            lblSoDienThoai.Location = new Point(23, 45);
             lblSoDienThoai.Name = "lblSoDienThoai";
-            lblSoDienThoai.Size = new Size(79, 15);
+            lblSoDienThoai.Size = new Size(97, 20);
+            lblSoDienThoai.TabIndex = 0;
             lblSoDienThoai.Text = "Số điện thoại";
             // 
             // txtSoDienThoai
             // 
-            txtSoDienThoai.Location = new Point(20, 54);
+            txtSoDienThoai.Location = new Point(23, 72);
+            txtSoDienThoai.Margin = new Padding(3, 4, 3, 4);
             txtSoDienThoai.MaxLength = 20;
             txtSoDienThoai.Name = "txtSoDienThoai";
             txtSoDienThoai.PlaceholderText = "Nhập số điện thoại";
-            txtSoDienThoai.Size = new Size(235, 23);
+            txtSoDienThoai.Size = new Size(268, 27);
+            txtSoDienThoai.TabIndex = 1;
             // 
             // btnTimKiem
             // 
             btnTimKiem.BackColor = Color.FromArgb(230, 245, 242);
             btnTimKiem.FlatStyle = FlatStyle.Flat;
-            btnTimKiem.Location = new Point(265, 53);
+            btnTimKiem.Location = new Point(309, 67);
+            btnTimKiem.Margin = new Padding(3, 4, 3, 4);
             btnTimKiem.Name = "btnTimKiem";
-            btnTimKiem.Size = new Size(110, 27);
+            btnTimKiem.Size = new Size(126, 36);
+            btnTimKiem.TabIndex = 2;
             btnTimKiem.Text = "Tìm bệnh nhân";
             btnTimKiem.UseVisualStyleBackColor = false;
             // 
             // lblHoTen
             // 
             lblHoTen.AutoSize = true;
-            lblHoTen.Location = new Point(395, 34);
+            lblHoTen.Location = new Point(451, 45);
             lblHoTen.Name = "lblHoTen";
-            lblHoTen.Size = new Size(43, 15);
+            lblHoTen.Size = new Size(54, 20);
+            lblHoTen.TabIndex = 3;
             lblHoTen.Text = "Họ tên";
             // 
             // txtHoTen
             // 
             txtHoTen.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtHoTen.Location = new Point(395, 54);
+            txtHoTen.Location = new Point(451, 72);
+            txtHoTen.Margin = new Padding(3, 4, 3, 4);
             txtHoTen.MaxLength = 150;
             txtHoTen.Name = "txtHoTen";
             txtHoTen.PlaceholderText = "Nhập họ tên nếu là bệnh nhân mới";
-            txtHoTen.Size = new Size(640, 23);
+            txtHoTen.Size = new Size(731, 27);
+            txtHoTen.TabIndex = 4;
             // 
             // lblChanDoan
             // 
             lblChanDoan.AutoSize = true;
-            lblChanDoan.Location = new Point(20, 94);
+            lblChanDoan.Location = new Point(23, 125);
             lblChanDoan.Name = "lblChanDoan";
-            lblChanDoan.Size = new Size(60, 15);
+            lblChanDoan.Size = new Size(80, 20);
+            lblChanDoan.TabIndex = 5;
             lblChanDoan.Text = "Chẩn đoán";
             // 
             // txtChanDoan
             // 
             txtChanDoan.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtChanDoan.Location = new Point(20, 114);
+            txtChanDoan.Location = new Point(23, 152);
+            txtChanDoan.Margin = new Padding(3, 4, 3, 4);
             txtChanDoan.MaxLength = 500;
             txtChanDoan.Name = "txtChanDoan";
             txtChanDoan.PlaceholderText = "Nhập chẩn đoán";
-            txtChanDoan.Size = new Size(610, 23);
+            txtChanDoan.Size = new Size(697, 27);
+            txtChanDoan.TabIndex = 6;
             // 
             // lblTienKham
             // 
             lblTienKham.AutoSize = true;
-            lblTienKham.Location = new Point(650, 94);
+            lblTienKham.Location = new Point(743, 125);
             lblTienKham.Name = "lblTienKham";
-            lblTienKham.Size = new Size(59, 15);
+            lblTienKham.Size = new Size(77, 20);
+            lblTienKham.TabIndex = 7;
             lblTienKham.Text = "Tiền khám";
             // 
             // nudTienKham
             // 
-            nudTienKham.DecimalPlaces = 0;
+            nudTienKham.Location = new Point(743, 152);
+            nudTienKham.Margin = new Padding(3, 4, 3, 4);
             nudTienKham.Maximum = new decimal(new int[] { 1000000000, 0, 0, 0 });
-            nudTienKham.Location = new Point(650, 114);
-            nudTienKham.MaximumSize = new Size(150, 0);
+            nudTienKham.MaximumSize = new Size(171, 0);
             nudTienKham.Name = "nudTienKham";
-            nudTienKham.Size = new Size(150, 23);
+            nudTienKham.Size = new Size(171, 27);
+            nudTienKham.TabIndex = 8;
             nudTienKham.ThousandsSeparator = true;
             // 
             // btnTaoHoSo
@@ -222,9 +290,11 @@ namespace bai6._7
             btnTaoHoSo.BackColor = Color.FromArgb(21, 101, 92);
             btnTaoHoSo.FlatStyle = FlatStyle.Flat;
             btnTaoHoSo.ForeColor = Color.White;
-            btnTaoHoSo.Location = new Point(825, 110);
+            btnTaoHoSo.Location = new Point(943, 147);
+            btnTaoHoSo.Margin = new Padding(3, 4, 3, 4);
             btnTaoHoSo.Name = "btnTaoHoSo";
-            btnTaoHoSo.Size = new Size(210, 31);
+            btnTaoHoSo.Size = new Size(240, 41);
+            btnTaoHoSo.TabIndex = 9;
             btnTaoHoSo.Text = "Tạo hồ sơ khám";
             btnTaoHoSo.UseVisualStyleBackColor = false;
             // 
@@ -232,9 +302,10 @@ namespace bai6._7
             // 
             lblMaHoSo.AutoSize = true;
             lblMaHoSo.ForeColor = Color.FromArgb(21, 101, 92);
-            lblMaHoSo.Location = new Point(20, 151);
+            lblMaHoSo.Location = new Point(23, 201);
             lblMaHoSo.Name = "lblMaHoSo";
-            lblMaHoSo.Size = new Size(120, 15);
+            lblMaHoSo.Size = new Size(149, 20);
+            lblMaHoSo.TabIndex = 10;
             lblMaHoSo.Text = "Chưa tạo hồ sơ khám";
             // 
             // grpKeDon
@@ -247,52 +318,63 @@ namespace bai6._7
             grpKeDon.Controls.Add(btnThemThuoc);
             grpKeDon.Controls.Add(dgvDonThuoc);
             grpKeDon.Controls.Add(btnXoaThuoc);
-            grpKeDon.Location = new Point(20, 294);
+            grpKeDon.Location = new Point(23, 392);
+            grpKeDon.Margin = new Padding(3, 4, 3, 4);
             grpKeDon.Name = "grpKeDon";
-            grpKeDon.Size = new Size(1060, 350);
+            grpKeDon.Padding = new Padding(3, 4, 3, 4);
+            grpKeDon.Size = new Size(1211, 467);
+            grpKeDon.TabIndex = 3;
             grpKeDon.TabStop = false;
             grpKeDon.Text = "2. Kê đơn thuốc";
             // 
             // lblThuoc
             // 
             lblThuoc.AutoSize = true;
-            lblThuoc.Location = new Point(20, 31);
+            lblThuoc.Location = new Point(23, 41);
             lblThuoc.Name = "lblThuoc";
-            lblThuoc.Size = new Size(37, 15);
+            lblThuoc.Size = new Size(49, 20);
+            lblThuoc.TabIndex = 0;
             lblThuoc.Text = "Thuốc";
             // 
             // cboThuoc
             // 
             cboThuoc.DropDownStyle = ComboBoxStyle.DropDownList;
             cboThuoc.FormattingEnabled = true;
-            cboThuoc.Location = new Point(20, 51);
+            cboThuoc.Location = new Point(23, 68);
+            cboThuoc.Margin = new Padding(3, 4, 3, 4);
             cboThuoc.Name = "cboThuoc";
-            cboThuoc.Size = new Size(470, 23);
+            cboThuoc.Size = new Size(537, 28);
+            cboThuoc.TabIndex = 1;
             // 
             // lblSoLuong
             // 
             lblSoLuong.AutoSize = true;
-            lblSoLuong.Location = new Point(515, 31);
+            lblSoLuong.Location = new Point(589, 41);
             lblSoLuong.Name = "lblSoLuong";
-            lblSoLuong.Size = new Size(52, 15);
+            lblSoLuong.Size = new Size(69, 20);
+            lblSoLuong.TabIndex = 2;
             lblSoLuong.Text = "Số lượng";
             // 
             // txtSoLuong
             // 
-            txtSoLuong.Location = new Point(515, 51);
+            txtSoLuong.Location = new Point(589, 68);
+            txtSoLuong.Margin = new Padding(3, 4, 3, 4);
             txtSoLuong.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
             txtSoLuong.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             txtSoLuong.Name = "txtSoLuong";
-            txtSoLuong.Size = new Size(100, 23);
+            txtSoLuong.Size = new Size(114, 27);
+            txtSoLuong.TabIndex = 3;
             txtSoLuong.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // btnThemThuoc
             // 
             btnThemThuoc.BackColor = Color.FromArgb(230, 245, 242);
             btnThemThuoc.FlatStyle = FlatStyle.Flat;
-            btnThemThuoc.Location = new Point(635, 49);
+            btnThemThuoc.Location = new Point(726, 65);
+            btnThemThuoc.Margin = new Padding(3, 4, 3, 4);
             btnThemThuoc.Name = "btnThemThuoc";
-            btnThemThuoc.Size = new Size(130, 27);
+            btnThemThuoc.Size = new Size(149, 36);
+            btnThemThuoc.TabIndex = 4;
             btnThemThuoc.Text = "Thêm vào đơn";
             btnThemThuoc.UseVisualStyleBackColor = false;
             // 
@@ -305,64 +387,74 @@ namespace bai6._7
             dgvDonThuoc.BackgroundColor = Color.White;
             dgvDonThuoc.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDonThuoc.Columns.AddRange(new DataGridViewColumn[] { colMaThuoc, colTenThuoc, colDonViTinh, colSoLuong, colDonGia, colThanhTien });
-            dgvDonThuoc.Location = new Point(20, 91);
+            dgvDonThuoc.Location = new Point(23, 121);
+            dgvDonThuoc.Margin = new Padding(3, 4, 3, 4);
             dgvDonThuoc.MultiSelect = false;
             dgvDonThuoc.Name = "dgvDonThuoc";
             dgvDonThuoc.ReadOnly = true;
             dgvDonThuoc.RowHeadersVisible = false;
+            dgvDonThuoc.RowHeadersWidth = 51;
             dgvDonThuoc.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvDonThuoc.Size = new Size(1015, 210);
+            dgvDonThuoc.Size = new Size(1160, 280);
+            dgvDonThuoc.TabIndex = 5;
             // 
             // colMaThuoc
             // 
+            colMaThuoc.FillWeight = 65F;
             colMaThuoc.HeaderText = "Mã thuốc";
+            colMaThuoc.MinimumWidth = 6;
             colMaThuoc.Name = "colMaThuoc";
             colMaThuoc.ReadOnly = true;
-            colMaThuoc.FillWeight = 65F;
             // 
             // colTenThuoc
             // 
+            colTenThuoc.FillWeight = 170F;
             colTenThuoc.HeaderText = "Tên thuốc";
+            colTenThuoc.MinimumWidth = 6;
             colTenThuoc.Name = "colTenThuoc";
             colTenThuoc.ReadOnly = true;
-            colTenThuoc.FillWeight = 170F;
             // 
             // colDonViTinh
             // 
+            colDonViTinh.FillWeight = 65F;
             colDonViTinh.HeaderText = "Đơn vị";
+            colDonViTinh.MinimumWidth = 6;
             colDonViTinh.Name = "colDonViTinh";
             colDonViTinh.ReadOnly = true;
-            colDonViTinh.FillWeight = 65F;
             // 
             // colSoLuong
             // 
+            colSoLuong.FillWeight = 65F;
             colSoLuong.HeaderText = "Số lượng";
+            colSoLuong.MinimumWidth = 6;
             colSoLuong.Name = "colSoLuong";
             colSoLuong.ReadOnly = true;
-            colSoLuong.FillWeight = 65F;
             // 
             // colDonGia
             // 
+            colDonGia.FillWeight = 90F;
             colDonGia.HeaderText = "Đơn giá";
+            colDonGia.MinimumWidth = 6;
             colDonGia.Name = "colDonGia";
             colDonGia.ReadOnly = true;
-            colDonGia.FillWeight = 90F;
             // 
             // colThanhTien
             // 
             colThanhTien.HeaderText = "Thành tiền";
+            colThanhTien.MinimumWidth = 6;
             colThanhTien.Name = "colThanhTien";
             colThanhTien.ReadOnly = true;
-            colThanhTien.FillWeight = 100F;
             // 
             // btnXoaThuoc
             // 
             btnXoaThuoc.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnXoaThuoc.BackColor = Color.FromArgb(255, 242, 242);
             btnXoaThuoc.FlatStyle = FlatStyle.Flat;
-            btnXoaThuoc.Location = new Point(900, 309);
+            btnXoaThuoc.Location = new Point(1029, 412);
+            btnXoaThuoc.Margin = new Padding(3, 4, 3, 4);
             btnXoaThuoc.Name = "btnXoaThuoc";
-            btnXoaThuoc.Size = new Size(135, 27);
+            btnXoaThuoc.Size = new Size(154, 36);
+            btnXoaThuoc.TabIndex = 6;
             btnXoaThuoc.Text = "Xóa thuốc chọn";
             btnXoaThuoc.UseVisualStyleBackColor = false;
             // 
@@ -372,9 +464,10 @@ namespace bai6._7
             lblTongTien.AutoSize = true;
             lblTongTien.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             lblTongTien.ForeColor = Color.FromArgb(21, 101, 92);
-            lblTongTien.Location = new Point(24, 676);
+            lblTongTien.Location = new Point(27, 901);
             lblTongTien.Name = "lblTongTien";
-            lblTongTien.Size = new Size(214, 25);
+            lblTongTien.Size = new Size(175, 32);
+            lblTongTien.TabIndex = 2;
             lblTongTien.Text = "Tổng tiền: 0 ₫";
             // 
             // btnLuuXuatDon
@@ -383,9 +476,11 @@ namespace bai6._7
             btnLuuXuatDon.BackColor = Color.FromArgb(21, 101, 92);
             btnLuuXuatDon.FlatStyle = FlatStyle.Flat;
             btnLuuXuatDon.ForeColor = Color.White;
-            btnLuuXuatDon.Location = new Point(690, 671);
+            btnLuuXuatDon.Location = new Point(789, 895);
+            btnLuuXuatDon.Margin = new Padding(3, 4, 3, 4);
             btnLuuXuatDon.Name = "btnLuuXuatDon";
-            btnLuuXuatDon.Size = new Size(185, 38);
+            btnLuuXuatDon.Size = new Size(211, 51);
+            btnLuuXuatDon.TabIndex = 1;
             btnLuuXuatDon.Text = "Lưu và xuất đơn";
             btnLuuXuatDon.UseVisualStyleBackColor = false;
             // 
@@ -395,25 +490,28 @@ namespace bai6._7
             btnThanhToan.BackColor = Color.FromArgb(30, 136, 100);
             btnThanhToan.FlatStyle = FlatStyle.Flat;
             btnThanhToan.ForeColor = Color.White;
-            btnThanhToan.Location = new Point(890, 671);
+            btnThanhToan.Location = new Point(1017, 895);
+            btnThanhToan.Margin = new Padding(3, 4, 3, 4);
             btnThanhToan.Name = "btnThanhToan";
-            btnThanhToan.Size = new Size(190, 38);
+            btnThanhToan.Size = new Size(217, 51);
+            btnThanhToan.TabIndex = 0;
             btnThanhToan.Text = "Thanh toán";
             btnThanhToan.UseVisualStyleBackColor = false;
             // 
             // FormKhamBenh
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(245, 248, 248);
-            ClientSize = new Size(1100, 735);
+            ClientSize = new Size(1257, 980);
             Controls.Add(btnThanhToan);
             Controls.Add(btnLuuXuatDon);
             Controls.Add(lblTongTien);
             Controls.Add(grpKeDon);
             Controls.Add(grpTiepNhan);
             Controls.Add(pnlHeader);
-            MinimumSize = new Size(900, 700);
+            Margin = new Padding(3, 4, 3, 4);
+            MinimumSize = new Size(1026, 918);
             Name = "FormKhamBenh";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Hệ thống quản lý phòng khám";

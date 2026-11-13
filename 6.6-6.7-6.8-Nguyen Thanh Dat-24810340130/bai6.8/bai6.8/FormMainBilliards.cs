@@ -209,4 +209,19 @@ public partial class FormMainBilliards : Form
     {
         MessageBox.Show(ex.Message, "Không thể thực hiện", MessageBoxButtons.OK, MessageBoxIcon.Error);
     }
+
+    private void pnlThongTinBan_Paint(object sender, PaintEventArgs e)
+    {
+
+    }
+
+    private void lblGioBatDau_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void lblDanhSachBan_Click(object sender, EventArgs e)
+    {
+
+    }
 }

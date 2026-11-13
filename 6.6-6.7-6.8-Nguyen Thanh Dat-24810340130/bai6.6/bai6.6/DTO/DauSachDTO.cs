@@ -3,6 +3,7 @@ namespace bai6._6.DTO;
 public sealed class DauSachDTO
 {
     public int MaSach { get; set; }
+    public string HienThi => $"{MaSach} - {TenSach} (còn {SoLuongCon})";
     public string TenSach { get; set; } = string.Empty;
     public string? TacGia { get; set; }
     public string TheLoai { get; set; } = string.Empty;

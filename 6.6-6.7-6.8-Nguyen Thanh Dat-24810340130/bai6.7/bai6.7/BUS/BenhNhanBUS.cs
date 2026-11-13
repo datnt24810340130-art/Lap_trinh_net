@@ -8,6 +8,38 @@ public sealed class BenhNhanBUS
 {
     private readonly BenhNhanDAL _benhNhanDAL = new();
 
+    public IReadOnlyList<BenhNhanDTO> LayDanhSach(string? tuKhoa = null)
+    {
+        return _benhNhanDAL.LayDanhSach(tuKhoa);
+    }
+
+    public int ThemBenhNhan(BenhNhanDTO benhNhan)
+    {
+        ValidatePatient(benhNhan);
+        return _benhNhanDAL.ThemBenhNhan(NormalizePatient(benhNhan));
+    }
+
+    public void CapNhatBenhNhan(BenhNhanDTO benhNhan)
+    {
+        ValidatePatient(benhNhan);
+        if (benhNhan.MaBN <= 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(benhNhan), "Mã bệnh nhân không hợp lệ.");
+        }
+
+        _benhNhanDAL.CapNhatBenhNhan(NormalizePatient(benhNhan));
+    }
+
+    public void XoaBenhNhan(int maBN)
+    {
+        if (maBN <= 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(maBN), "Mã bệnh nhân không hợp lệ.");
+        }
+
+        _benhNhanDAL.XoaBenhNhan(maBN);
+    }
+
     public BenhNhanDTO? TimTheoSoDienThoai(string soDienThoai)
     {
         ValidatePhone(soDienThoai);
@@ -35,13 +67,33 @@ public sealed class BenhNhanBUS
 
     private static void ValidatePatient(BenhNhanDTO benhNhan)
     {
+        ArgumentNullException.ThrowIfNull(benhNhan);
         if (string.IsNullOrWhiteSpace(benhNhan.HoTen) || benhNhan.HoTen.Trim().Length > 150)
         {
             throw new ArgumentException("Họ tên bệnh nhân là bắt buộc và tối đa 150 ký tự.", nameof(benhNhan));
         }
 
         ValidatePhone(benhNhan.SoDienThoai);
+        if (benhNhan.NgaySinh > DateTime.Today)
+        {
+            throw new ArgumentException("Ngày sinh không thể ở tương lai.", nameof(benhNhan));
+        }
+
+        if ((benhNhan.GioiTinh?.Trim().Length ?? 0) > 20 || (benhNhan.DiaChi?.Trim().Length ?? 0) > 300)
+        {
+            throw new ArgumentException("Giới tính tối đa 20 ký tự và địa chỉ tối đa 300 ký tự.", nameof(benhNhan));
+        }
     }
+
+    private static BenhNhanDTO NormalizePatient(BenhNhanDTO patient) => new()
+    {
+        MaBN = patient.MaBN,
+        HoTen = patient.HoTen.Trim(),
+        SoDienThoai = patient.SoDienThoai.Trim(),
+        NgaySinh = patient.NgaySinh,
+        GioiTinh = string.IsNullOrWhiteSpace(patient.GioiTinh) ? null : patient.GioiTinh.Trim(),
+        DiaChi = string.IsNullOrWhiteSpace(patient.DiaChi) ? null : patient.DiaChi.Trim()
+    };
 
     private static void ValidatePhone(string soDienThoai)
     {

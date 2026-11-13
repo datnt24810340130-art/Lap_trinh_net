@@ -1,0 +1,16 @@
+## Visual Studio cache & user config
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build outputs
+[Bb]in/
+[Oo]bj/
+Debug/
+Release/
+
+## Logs
+*.log
+
